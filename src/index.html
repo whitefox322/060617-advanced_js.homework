@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        Registration
+    </header>
+    <form action="#" class="reg" novalidate>
+        <div class="reg__step">
+            <button class="reg__btn" id="btn1">Step 1</button>
+        </div>
+        <div class="reg__step">
+            <button class="reg__btn" id="btn2">Step 2</button>
+        </div>
+        <div class="reg__step">
+            <button class="reg__btn" id="btn3">Step 3</button>
+        </div>
+    <ul class="reg__list" id="list1">
+        <li class="reg__item">
+            <label for="fname">First name<br>
+                <input type="text" id="fname" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="sname">Second name<br>
+                <input type="text" id="sname" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="age">Age<br>
+                <input type="text" id="age" required maxlength="3">
+            </label>
+        </li>
+        <li class="reg__item">
+            <label>Gender
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="female" checked>Other
+            </label>
+        </li>
+    </ul>
+    <ul class="reg__list" id="list2">
+        <li class="reg__item">
+            <label for="email">Email<br>
+                <input type="text" id="email" data-type="email" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="nick">Nickname<br>
+                <input type="text" id="nick" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="pswd">Password<br>
+                <input type="password" id="pswd" required minlength="8">
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="pswd2">Retype password<br>
+                <input type="password" id="pswd2" required minlength="8">
+            </label>
+        </li>
+    </ul>
+    <ul class="reg__list" id="list3">
+        <li class="reg__item">
+            <label for="country">Country<br>
+                <input type="text" id="country" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="phone">Phone number<br>
+                <input type="tel" id="phone" required minlength="12">
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="city">City<br>
+                <input type="text" id="city" required>
+            </label>
+        </li>
+        <li class="reg__item">
+            <label for="hobby">Hobby<br>
+                <textarea name="area" id="hobby" cols="25" rows="5"></textarea>
+            </label>
+        </li>
+        <li class="reg__item">
+            <button class="reg__btn reg__button">Register</button>
+        </li>
+    </ul>
+    </form>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
